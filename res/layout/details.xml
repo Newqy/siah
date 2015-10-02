@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true" >
+
+        <Button
+        android:id="@+id/navmenu"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="menu" />
+    
+    <Button
+        android:id="@+id/back"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Back" />
+
+    <TextView
+        android:id="@+id/siah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/navmenu"
+        android:layout_alignBottom="@+id/navmenu"
+        android:layout_centerHorizontal="true"
+        android:text="SIAH"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    
+    	
+    	<TextView
+        android:id="@+id/advertisement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/go"
+        android:layout_marginTop="14dp"
+        android:text="Advertisement"
+        android:textSize="48dp" />
+
+    	<Button
+    	    android:id="@+id/save"
+    	    style="?android:attr/buttonStyleSmall"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentLeft="true"
+    	    android:layout_below="@+id/navmenu"
+    	    android:text="save" />
+
+    	<ScrollView
+    	    android:id="@+id/scrollView1"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentLeft="true"
+    	    android:layout_alignParentRight="true"
+    	    android:layout_below="@+id/save" >
+
+    	    <LinearLayout
+    	        android:layout_width="match_parent"
+    	        android:layout_height="match_parent"
+    	        android:gravity="center"
+    	        android:orientation="vertical" >
+
+    	        <ImageView
+    	            android:id="@+id/productImage"
+    	            android:layout_width="match_parent"
+    	            android:layout_height="83dp"
+    	            android:src="@drawable/ic_launcher" />
+    	        
+    	        <TextView
+        			android:id="@+id/productName"
+        			android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+				    android:text="Product Name" />
+    	        
+				<TextView
+        			android:id="@+id/brandName"
+        			android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+				    android:text="Brand Name" />
+				
+				<TextView
+        			android:id="@+id/price"
+        			android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+				    android:text="Price" />
+				
+			    <Spinner
+			        android:id="@+id/branchName"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content" />
+				
+			    <Button
+			        android:id="@+id/preview"
+			        style="?android:attr/buttonStyleSmall"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="MAP Preview" />
+			        	
+				<TextView
+        			android:id="@+id/inStock"
+        			android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+				    android:text="In Stock" />
+				
+				<TextView
+        			android:id="@+id/contactNumber"
+        			android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+				    android:text="Contact Number" />
+				
+    	    </LinearLayout>
+    	</ScrollView>
+
+</RelativeLayout>

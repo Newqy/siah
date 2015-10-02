@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true" >
+
+    <Button
+        android:id="@+id/navmenu"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="menu" />
+    
+    <Button
+        android:id="@+id/clear"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Clear" />
+
+    <TextView
+        android:id="@+id/siah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/navmenu"
+        android:layout_alignBottom="@+id/navmenu"
+        android:layout_centerHorizontal="true"
+        android:text="SIAH"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+   		<ScrollView
+    	    android:id="@+id/scrollView1"
+    		android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginLeft="5dp"
+    	    android:layout_marginRight="5dp"
+    	    android:layout_alignParentLeft="true"
+    	    android:layout_alignParentRight="true"
+    	    android:layout_below="@+id/navmenu" 
+    	    android:layout_above="@+id/advertisement">
+
+    	    <LinearLayout
+    	        android:layout_width="match_parent"
+    	        android:layout_height="match_parent"
+    	        android:gravity="center"
+    	        android:orientation="vertical" >
+    
+    	        <TextView 
+    	         	android:id="@+id/productLabel"
+    				android:layout_width="match_parent"
+    			    android:layout_height="wrap_content" 
+    	            android:text="Product"
+    	            />
+    	        
+			    <Spinner
+			        android:id="@+id/product"
+    				android:layout_width="match_parent"
+			        android:layout_height="wrap_content" />
+				
+			    <TextView 
+    	         	android:id="@+id/productTypeLabel"
+    				android:layout_width="match_parent"
+			        android:layout_height="wrap_content" 
+    	            android:text="Product Type"
+    	            />
+			    
+			    <Spinner
+			        android:id="@+id/productType"
+    				android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			         />
+			    
+    	        <TextView 
+    	         	android:id="@+id/productBrandLabel"
+    				android:layout_width="match_parent"
+			        android:layout_height="wrap_content" 
+    	            android:text="Product Brand"
+    	            />			    
+			    
+			    <Spinner
+			        android:id="@+id/productBrand"
+    				android:layout_width="match_parent"
+			        android:layout_height="wrap_content" 
+			        />
+
+    	        <TextView 
+    	         	android:id="@+id/colourLabel"
+    				android:layout_width="match_parent"
+			        android:layout_height="wrap_content" 
+    	            android:text="Colour"
+    	            />			    
+			    			    
+			    <Spinner
+			        android:id="@+id/colour"
+    				android:layout_width="match_parent"
+			        android:layout_height="wrap_content" />
+
+    	        <TextView 
+    	         	android:id="@+id/priceLabel"
+    				android:layout_width="match_parent"
+			        android:layout_height="wrap_content" 
+    	            android:text="Price"
+    	            />			    
+			    			    
+			    <Spinner
+			        android:id="@+id/price"
+    				android:layout_width="match_parent"
+			        android:layout_height="wrap_content" />
+
+    	        <TextView 
+    	         	android:id="@+id/distanceLabel"
+    				android:layout_width="match_parent"
+			        android:layout_height="wrap_content" 
+    	            android:text="Distance"
+    	            />			    
+			    			    
+			    <Spinner
+			        android:id="@+id/distance"
+    				android:layout_width="match_parent"
+			        android:layout_height="wrap_content" />
+			
+			    <Button
+			        android:id="@+id/go"
+			        style="?android:attr/buttonStyleSmall"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="GO" />
+			 </LinearLayout>
+		</ScrollView>
+
+    <TextView
+        android:id="@+id/advertisement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:text="Advertisement"
+        android:textSize="48dp" />
+    
+</RelativeLayout>
